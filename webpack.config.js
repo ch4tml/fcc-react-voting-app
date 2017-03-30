@@ -5,7 +5,8 @@ module.exports = {
 	// context: path.join(__dirname, 'dist'),
 	devtool: 'cheap-module-source-map',
 	entry:  [
-		'webpack-hot-middleware/client',
+		'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+		// 'webpack-hot-middleware/client',
 		'./index'
 	],
 	output: {
@@ -15,7 +16,8 @@ module.exports = {
 	},
 	plugins: [
 		// OccurenceOrderPlugin is needed for webpack 1.x only
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NoEmitOnErrorsPlugin()
 	],
 	module: {
 		rules: [

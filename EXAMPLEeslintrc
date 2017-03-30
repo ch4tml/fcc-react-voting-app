@@ -1,0 +1,14 @@
+{
+    'parserOptions': {
+        'ecmaFeatures': {
+            'jsx': true
+            }
+        }
+    'rules': {
+        'curly': 'error',
+        'indent': ['error', 'tab']
+        'semi': ['warn', 'always'],
+        'quotes': ['warn', 'double'],
+        'no-console': 'on'
+    }
+}
