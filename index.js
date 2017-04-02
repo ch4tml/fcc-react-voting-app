@@ -2,22 +2,19 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import { BrowserRouter } from 'react-router-dom';
+
 import appReducers from './reducers/index';
 import App from './components/App';
+import Router from './routes';
 
 let store = createStore(appReducers);
 
 render(
 	<Provider store={store}>
-		<App />
+		<BrowserRouter>
+			<Router />
+		</BrowserRouter>
 	</Provider>,
 	document.getElementById('root')
 );
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-// 	ReactDOM.render(
-// 		React.createElement(App),
-// 		document.getElementById('mount')
-// 	);
-// });
