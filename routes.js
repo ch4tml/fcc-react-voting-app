@@ -15,10 +15,7 @@ const Router = () => {
 		<div>
 
 			<Route path='/' component={StandardPage}/>
-			<Route path='/home' component={StandardPage}/>
-			<Route path='/settings' component={StandardPage}/>
-			<Route path='/poll/' component={StandardPage}/>
-			<Route path='/create' component={StandardPage}/>
+
 
 		</div>
 

@@ -4,6 +4,7 @@ const Home = () => {
 
 	return (
 		<div>
+			<h1>Poll and Votes</h1>
 			<li>
 				Favourite js framework
 			</li>

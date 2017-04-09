@@ -20,15 +20,17 @@
 		li {
 			display: inline;
 			height: 35px;
-			background-color: darken(lightblue, 10%);
-			padding: 0px 5px 0px 5px;
-
-			&:hover {
-				background-color: lighten(lightblue, 10%);
-			}
 
 			a {
 				text-decoration: none;
+				padding: 8px 5px 8px 5px;
+				background-color: darken(lightblue, 10%);
+
+				&:hover {
+					background-color: lighten(lightblue, 10%);
+					border-bottom: 3px solid darken(lightblue, 40%);
+				}
+
 			}
 
 		}
