@@ -1,1 +1,8 @@
-@import 'nav.scss'
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+@import 'nav.scss';
+@import 'standardpage.scss';

@@ -1,24 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
 	return (
 
-		<div>
+		<div className='navbar'>
 			<ul>
 				<li>
-					Home
+					<Link to='/home'>Home</Link>
 				</li>
 				<li>
-					Account
+					<Link to='/create'>Create Poll</Link>
 				</li>
 				<li>
-					Login
+					<Link to='/poll'>All Polls</Link>
 				</li>
 				<li>
-					Create Account
+					<Link to='/settings'>Settings</Link>
 				</li>
 			</ul>
+
 		</div>
 
 	);
