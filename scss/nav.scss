@@ -23,12 +23,16 @@
 
 			a {
 				text-decoration: none;
-				padding: 8px 5px 8px 5px;
+				padding: 8px;
 				background-color: darken(lightblue, 10%);
 
 				&:hover {
-					background-color: lighten(lightblue, 10%);
+					background-color: lighten(lightblue, 2%);
 					border-bottom: 3px solid darken(lightblue, 40%);
+				}
+
+				&:visited, &:active {
+					color: white;
 				}
 
 			}

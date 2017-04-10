@@ -4,6 +4,7 @@ const UserDash = () => {
 
 	return (
 		<div>
+			<h1>Settings</h1>
 			User Dash
 		</div>
 	);

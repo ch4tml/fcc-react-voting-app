@@ -14,8 +14,8 @@ const Router = () => {
 
 		<div>
 
-			<Route path='/' component={StandardPage}/>
-
+			<Route path='*' component={StandardPage}/>
+			<Redirect from='/' to='/home'/>
 
 		</div>
 

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const PollPage = () => {
+const PollPage = ({ title }) => {
 
 	return (
 		<div>
+			<h1>Poll title</h1>
 			Here is a poll
 		</div>
 	);

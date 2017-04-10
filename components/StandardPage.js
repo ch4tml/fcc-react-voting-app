@@ -8,17 +8,17 @@ import PollPage from './PollPage';
 
 import Nav from './Nav';
 
-const StandardPage = () => {
+const StandardPage = ({ match }) => {
 
 	return (
 		<div>
 			<Nav />
 			<div className='standardpage-content'>
 
-				<Route exact path='/home' component={Home}/>
-				<Route exact path='/settings' component={UserDash}/>
-				<Route exact path='/create' component={CreatePoll}/>
-				<Route exact path='/poll' component={PollPage}/>
+				<Route path='/home' component={Home}/>
+				<Route path='/settings' component={UserDash}/>
+				<Route path='/create' component={CreatePoll}/>
+				<Route path='/poll' component={PollPage}/>
 
 			</div>
 
@@ -27,6 +27,7 @@ const StandardPage = () => {
 	);
 
 };
+
 
 StandardPage.propTypes = {
 

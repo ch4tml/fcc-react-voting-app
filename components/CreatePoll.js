@@ -4,6 +4,7 @@ const CreatePoll = () => {
 
 	return (
 		<div>
+			<h1>Create poll</h1>
 			Create Poll
 		</div>
 	);
